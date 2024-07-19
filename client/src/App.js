@@ -23,16 +23,16 @@ function App() {
     <div className="App">
       {!showChat ? (
         <div className="joinChatContainer">
-          <h1>CHATGRAM ❤️</h1>
-          <h3>Avoid Calls join a Chat</h3>
-          <input type="text" placeholder="Jhon..." onChange={(event) => {
+          <h1>❤️CHAT-NEST ❤️</h1>
+          <h3>"Cut the call—start chatting now!"</h3>
+          <input type="text" placeholder="Type Name..." onChange={(event) => {
             setUsername(event.target.value);
           }}
           />
-          <input type="text" placeholder="Room Id..." onChange={(event) => {
+          <input type="text" placeholder="Type Room Id..." onChange={(event) => {
             setRoom(event.target.value);
           }} />
-          <button onClick={joinRoom}>Join A Room</button>
+          <button onClick={joinRoom}>Dive into the Chat Room</button>
         </div>
       )
         : (
