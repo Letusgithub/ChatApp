@@ -7,6 +7,10 @@ const { Server } = require("socket.io");
 
 app.use(cors());
 
+app.get("/", (req, res)=>{
+    res.send("Chat App Backend");
+});
+
 dotenv.config();
 
 const server = http.createServer(app);
@@ -44,3 +48,5 @@ io.on("connection", (socket) => {
 server.listen(process.env.PORT, () => {
     console.log(`server Running on ${process.env.PORT}`);
 })
+
+module.exports = server;
