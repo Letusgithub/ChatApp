@@ -49,4 +49,4 @@ server.listen(process.env.PORT, () => {
     console.log(`server Running on ${process.env.PORT}`);
 })
 
-module.exports = app;
+module.exports = server;
